@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head></head></head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regiane Santos | Desenvolvedora Front-End</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --accent-color: #38bdf8;
+      --text-color: #f8fafc;
+      --text-secondary: #94a3b8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--accent-color);
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+    }
+
+    .social-links {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .social-links a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 500;
+      border: 1px solid var(--accent-color);
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background-color: var(--accent-color);
+      color: var(--bg-color);
+    }
+
+    .section {
+      background: var(--card-bg);
+      padding: 1.8rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      border: 1px solid #334155;
+    }
+
+    .section h2 {
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #334155;
+      padding-bottom: 0.5rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .skill-card {
+      background: #0f172a;
+      padding: 0.8rem;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      font-weight: 500;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: #0f172a;
+      padding: 1.4rem;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--text-color);
+    }
+
+    .project-card p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: var(--accent-color);
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-secondary);
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Regiane Santos</h1>
+      <p>Desenvolvedora Front-End & Estudante de Análise e Desenvolvimento de Sistemas (UEMA)</p>
+      
+      <div class="social-links">
+        <a href="https://github.com/Regianesantos1089" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/regiane-santos-419a3986" target="_blank">LinkedIn</a>
+        <a href="mailto:regianesantos1022@hotmail.com">Contato</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Sobre Mim</h2>
+      <p>
+        Estudante de Análise e Desenvolvimento de Sistemas na Universidade Estadual do Maranhão (UEMA). 
+        Focada em aprendizado contínuo e desenvolvimento de projetos web responsivos e modernos.
+        Tenho grande paixão por resolver problemas, aprender novas tecnologias e participar de desafios práticos como hackathons.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Tecnologias & Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">Figma</div>
+        <div class="skill-card">Banco de Dados</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Projetos & Destaques</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div>
+            <h3>Biblioteca Virtual Livros</h3>
+            <p>Projeto em equipe voltado para o desenvolvimento de uma plataforma web para organização e consulta de livros virtuais.</p>
+          </div>
+          <a href="https://github.com/Regianesantos1089" target="_blank" class="btn">Ver no GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <div>
+            <h3>Hackathon-STC</h3>
+            <p>Participação no evento promovido pela Secretaria de Transparência e Controle do Estado do Maranhão, desenvolvendo soluções tecnológicas em equipe.</p>
+          </div>
+          <a href="https://github.com/Regianesantos1089" target="_blank" class="btn">Ver Repositório</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Regiane Santos. Desenvolvido com HTML e CSS.</p>
+  </footer>
+
+</body>
+</html>
